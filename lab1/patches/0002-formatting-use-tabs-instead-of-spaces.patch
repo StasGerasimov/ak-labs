@@ -1,0 +1,51 @@
+From eee193a4728d049c4fcdf9f99d57b145a1c5160f Mon Sep 17 00:00:00 2001
+From: StasGerasimov <yourchoiceweb1@gmail.com>
+Date: Mon, 5 Oct 2020 19:56:39 +0300
+Subject: [PATCH 2/2] formatting: use tabs instead of spaces
+
+Signed-off-by: StasGerasimov <yourchoiceweb1@gmail.com>
+---
+ calculator.cpp | 6 +-----
+ calculator.h   | 6 +++---
+ 2 files changed, 4 insertions(+), 8 deletions(-)
+
+diff --git a/calculator.cpp b/calculator.cpp
+index dc9ed72..d10f529 100644
+--- a/calculator.cpp
++++ b/calculator.cpp
+@@ -2,14 +2,10 @@
+ 
+ int Calculator::Add (double a, double b)
+ {
+-<<<<<<< HEAD
+-    return a + b;
+-=======
+ 	return a + b + 0.5;
+->>>>>>> 4ad40a3... fix truncation error
+ }
+ 
+ int Calculator::Sub (double a, double b)
+ {
+-    return Add (a, -b);
++	return Add (a, -b);
+ }
+diff --git a/calculator.h b/calculator.h
+index 3740907..d59d596 100644
+--- a/calculator.h
++++ b/calculator.h
+@@ -3,9 +3,9 @@
+ 
+ class Calculator
+ {
+-    public:
+-        int Add (double, double);
+-        int Sub (double, double);
++	public:
++		int Add (double, double);
++		int Sub (double, double);
+ };
+ 
+ #endif//CALCULATOR_H
+-- 
+2.27.0
+
